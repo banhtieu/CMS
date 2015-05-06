@@ -1,5 +1,5 @@
 
 target
-
-.idea/libraries
-.idea/workspace.xml
+styles/*.css
+.idea/
+src/main/resources/static/styles/*.css

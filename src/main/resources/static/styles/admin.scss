@@ -1,0 +1,30 @@
+$sidebar-width: 110px;
+$topbar-height: 40px;
+
+#main-menu {
+
+  background: #000;
+  transition-duration: 0.5s;
+  padding-left: $sidebar-width;
+  height: $topbar-height;
+
+  .item, .input, input[type="text"] {
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    opacity: 1.0;
+  }
+
+}
+
+#left-side-bar {
+  width: $sidebar-width;
+  transition-duration: 0.5s;
+}
+
+#content {
+  margin-left: $sidebar-width;
+  padding-top: $topbar-height;
+}
+
+
