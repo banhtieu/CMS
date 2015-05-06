@@ -12,7 +12,7 @@
     <script type="text/javascript" src="Scripts/tour.js"></script>
 </head>
 <body>
-    <div class="fixed secondary ui menu">
+    <div class="fixed secondary ui menu" id="main-menu">
         <div class="wrapper">
             <a class="item">
                 <i class="home icon"></i> Home
@@ -36,46 +36,110 @@
             </div>
         </div>
     </div>
-    <div class="ui image">
-        <img src="Images/slide_4.jpg" />
-    </div>
-    <div class="ui grid">
-        <div class="twelve wide column">
-            <div class="ui relaxed horizontal list">
-                <div class="item">
-                    <img class="ui avatar image" src="Images/daniel.jpg">
-                    <div class="content">
-                        <a class="header">Daniel Louise</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="ui avatar image" src="/Images/stevie.jpg">
-                    <div class="content">
-                        <a class="header">Stevie Feliciano</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="ui avatar image" src="/Images/elliot.jpg">
-                    <div class="content">
-                        <a class="header">Elliot Fu</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="ui avatar image" src="/Images/stevie.jpg">
-                    <div class="content">
-                        <a class="header">Stevie Feliciano</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="ui avatar image" src="/Images/elliot.jpg">
-                    <div class="content">
-                        <a class="header">Elliot Fu</a>
-                    </div>
+    <div class="header">
+        <div class="background">
+            <div class="content">
+                <div class="wrapper">
+                    <h1>Title</h1>
+                    <div>Description</div>
                 </div>
             </div>
         </div>
-        <div class="four wide column">
-            hoa huong duong
+    </div>
+    <div class="navigation-bar">
+        <div class="wrapper">
+            <div class="ui breadcrumb">
+                <a class="section">Home</a>
+                <i class="right chevron icon divider"></i>
+                <a class="section">Category</a>
+                <i class="right chevron icon divider"></i>
+                <div class="active section">Detail</div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="ui grid">
+            <div class="ten wide column">
+                <div class="ui relaxed horizontal list">
+                    <div class="item">
+                        <img class="ui avatar image" src="Images/daniel.jpg">
+                        <div class="content">
+                            <a class="header">Daniel Louise</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="ui avatar image" src="/Images/stevie.jpg">
+                        <div class="content">
+                            <a class="header">Stevie Feliciano</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="ui avatar image" src="/Images/elliot.jpg">
+                        <div class="content">
+                            <a class="header">Elliot </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="ui avatar image" src="/Images/stevie.jpg">
+                        <div class="content">
+                            <a class="header">Stevie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="six wide column">
+                <div class="wrapper">
+                    <div class="right-sidebar">
+                        <div class="fluid ui button">Fits container</div>
+                    </div>
+                    <div class="ui form segment">
+                        <div class="two fields">
+                            <div class="field">
+                                <label>Select a date</label>
+                                <input placeholder="calendar" type="text">
+                            </div>
+                            <div class="field">
+                                <label>Time</label>
+                                <input placeholder="time" type="text">
+                            </div>
+                        </div>
+                        <div class="two fields">
+                            <div class="field">
+                                <label>Adults</label>
+                                <div class="ui selection dropdown">
+                                    <div class="default text">Select</div>
+                                    <i class="dropdown icon"></i>
+                                    <input type="hidden" name="Age">
+                                    <div class="menu">
+                                        <div class="item" data-value="19">19</div>
+                                        <div class="item" data-value="20">20</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Children</label>
+                                <div class="ui selection dropdown">
+                                    <div class="default text">Select</div>
+                                    <i class="dropdown icon"></i>
+                                    <input type="hidden" name="Age">
+                                    <div class="menu">
+                                        <div class="item" data-value="1">1</div>
+                                        <div class="item" data-value="2">2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="booking-sumary">
+                            <div class="ui celled list">
+                                <div class="item">Adults</div>
+                                <div class="item">Chilren</div>
+                                <div class="item">Total Amount</div>
+                                <div class="item">Total Costs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
