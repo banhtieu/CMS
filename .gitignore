@@ -2,3 +2,4 @@
 target
 styles/*.css
 .idea/
+src/main/resources/static/styles/*.css

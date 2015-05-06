@@ -95,7 +95,7 @@ footer {
 
 }
 
-.viewmap
+.view-map
 {
   .button
   {
@@ -115,7 +115,7 @@ footer {
   min-width: 100px;
 }
 
-.booking-sumary{
+.booking-summary{
   .total{
     color: rgb(224, 79, 103);
     font-family: Montserrat, Arial, sans-serif;
@@ -124,7 +124,7 @@ footer {
     text-transform: uppercase;
   }
 
-  .booknow{
+  .book-now{
     .button{
       background-color: rgb(133, 201, 157);
       font-family: Montserrat, Arial, sans-serif;
@@ -132,29 +132,21 @@ footer {
       font-weight: bold;
       text-transform: uppercase;
       color: white;
-      padding-bottom: 15px;
-      padding-top: 15px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 15px 20px;
     }
   }
-  .addwislist{
+
+  .add-wish-list{
       .button
       {
         margin-top: 15px;
         text-transform: uppercase;
-        border-bottom-color: rgb(51, 51, 51);
-        border-left-color: rgb(51, 51, 51);
-        border-right-color: rgb(51, 51, 51);
-        border-top-color: rgb(51, 51, 51);
+        border-color: rgb(51, 51, 51);
       }
     .button:hover{
       color: rgb(51, 51, 51);
       text-transform: lowercase;
-      border-bottom-color: #000000;
-      border-left-color: #000000;
-      border-right-color: #000000;
-      border-top-color: #000000;
+      border-color: #000;
     }
   }
 }
