@@ -3,7 +3,9 @@
  */
 
 angular
-    .module('TravelApplication', [])
-    .controller('ApplicationController', function ($scope) {
-
+    .module('TravelApplication', ['ngMaterial', 'ngMdIcons'])
+    .controller('ApplicationController', function ($scope, $mdSidenav) {
+        $scope.toggleSidenav = function(menuId) {
+            $mdSidenav(menuId).toggle();
+        };
     });
