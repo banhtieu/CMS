@@ -217,3 +217,32 @@ footer {
     font-family: Montserrat, Arial, sans-serif;
     font-size: 12px;
     margin-bottom: 20px; }
+
+.home-tours .main-title {
+  margin-bottom: 30px; }
+  .home-tours .main-title h2 {
+    color: #333333;
+    display: block;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .home-tours .main-title h2 span {
+      color: #e04f67; }
+  .home-tours .main-title p {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    color: #565a5c;
+    display: block;
+    font-family: Lato, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300; }
+.home-tours .viewall-tours {
+  text-align: center; }
+  .home-tours .viewall-tours .button {
+    -webkit-font-smoothing: antialiased;
+    background-color: #51bce6;
+    color: white;
+    text-transform: uppercase;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 12px; }

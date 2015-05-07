@@ -49,29 +49,42 @@
     <div class="ui image">
         <img src="Images/slide_4.jpg" />
     </div>
-    <div class="ui center aligned"><h1>TOURS</h1></div>
-    <div class="wrapper" ng-controller="AllToursController as allTours">
-        <div class="ui three stackable cards">
-            <div class="ui card" ng-repeat="tour in allTours.tours">
-                <div class="ui image">
-                    <a class="ui left red corner label">
-                        <i class="heart icon"></i>
-                    </a>
-                    <a href="/detail.html">
-                        <img src="Images/tour_box_1.jpg" />
-                    </a>
-                </div>
-                <div class="content">
-                    <a class="header" href="/detail.html">{{ tour.title }}</a>
-                    <div class="description">{{ tour.description }}</div>
-                </div>
-                <div class="extra content">
-                    <a>
-                        <i class="heart icon"></i>
-                        22 People love this
-                    </a>
+    <div class="home-tours wrapper">
+        <div class="ui center aligned">
+            <div class="main-title">
+                <h2>Paris
+                    <span>Top</span>
+                    Tours
+                </h2>
+                <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
+            </div>
+        </div>
+        <div ng-controller="AllToursController as allTours">
+            <div class="ui three stackable cards">
+                <div class="ui card" ng-repeat="tour in allTours.tours">
+                    <div class="ui image">
+                        <a class="ui left red corner label">
+                            <i class="heart icon"></i>
+                        </a>
+                        <a href="/detail.html">
+                            <img src="Images/tour_box_1.jpg" />
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a class="header" href="/detail.html">{{ tour.title }}</a>
+                        <div class="description">{{ tour.description }}</div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="heart icon"></i>
+                            22 People love this
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="viewall-tours">
+            <div class="ui button">View Alls Tours (144)</div>
         </div>
     </div>
     <footer>
