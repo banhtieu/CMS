@@ -49,42 +49,169 @@
     <div class="ui image">
         <img src="Images/slide_4.jpg" />
     </div>
-    <div class="home-tours wrapper">
-        <div class="ui center aligned">
-            <div class="main-title">
-                <h2>Paris
-                    <span>Top</span>
-                    Tours
-                </h2>
-                <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
+    <div class="home-tours">
+        <div class="wrapper">
+            <div class="tour-detail">
+                <div class="ui center aligned">
+                    <div class="main-title">
+                        <h2>Paris
+                            <span>Top</span>
+                            Tours
+                        </h2>
+                        <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
+                    </div>
+                </div>
+                <div ng-controller="AllToursController as allTours">
+                    <div class="ui three stackable cards">
+                        <div class="ui card" ng-repeat="tour in allTours.tours">
+                            <div class="ui image">
+                                <a class="ui left red corner label">
+                                    <i class="heart icon"></i>
+                                </a>
+                                <a href="/detail.html">
+                                    <img src="Images/tour_box_1.jpg" />
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a class="header" href="/detail.html">{{ tour.title }}</a>
+                                <div class="description">{{ tour.description }}</div>
+                            </div>
+                            <div class="extra content">
+                                <a>
+                                    <i class="heart icon"></i>
+                                    22 People love this
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="viewall-tours">
+                    <div class="ui button">View Alls Tours (144)</div>
+                </div>
             </div>
-        </div>
-        <div ng-controller="AllToursController as allTours">
-            <div class="ui three stackable cards">
-                <div class="ui card" ng-repeat="tour in allTours.tours">
-                    <div class="ui image">
-                        <a class="ui left red corner label">
-                            <i class="heart icon"></i>
-                        </a>
-                        <a href="/detail.html">
-                            <img src="Images/tour_box_1.jpg" />
-                        </a>
+            <div class="line"></div>
+            <div class="tour-detail">
+                <div class="ui center aligned">
+                    <div class="main-title">
+                        <h2>Paris
+                            <span>Top</span>
+                            Hotels
+                        </h2>
+                        <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
                     </div>
-                    <div class="content">
-                        <a class="header" href="/detail.html">{{ tour.title }}</a>
-                        <div class="description">{{ tour.description }}</div>
+                </div>
+                <div ng-controller="AllToursController as allTours">
+                    <div class="ui three stackable cards">
+                        <div class="ui card" ng-repeat="tour in allTours.tours">
+                            <div class="ui image">
+                                <a class="ui left red corner label">
+                                    <i class="heart icon"></i>
+                                </a>
+                                <a href="/detail.html">
+                                    <img src="Images/tour_box_1.jpg" />
+                                </a>
+                            </div>
+                            <div class="content">
+                                <a class="header" href="/detail.html">{{ tour.title }}</a>
+                                <div class="description">{{ tour.description }}</div>
+                            </div>
+                            <div class="extra content">
+                                <a>
+                                    <i class="heart icon"></i>
+                                    22 People love this
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="extra content">
-                        <a>
-                            <i class="heart icon"></i>
-                            22 People love this
-                        </a>
-                    </div>
+                </div>
+                <div class="viewall-tours">
+                    <div class="ui button">View Alls Hotels (144)</div>
                 </div>
             </div>
         </div>
-        <div class="viewall-tours">
-            <div class="ui button">View Alls Tours (144)</div>
+        <div class="other-tour">
+            <div class="wrapper">
+                <div class="ui center aligned">
+                    <div class="main-title">
+                        <h2>Other
+                            <span>popular</span>
+                            tours
+                        </h2>
+                        <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
+                    </div>
+                </div>
+                <div class="ui three column grid">
+                    <div class="column">
+                        <table class="ui very basic table">
+                            <thead></thead>
+                            <tbody>
+                            <tr>
+                                <td><i class="asterisk icon"></i>Tour Eiffel</td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td><i class="bug icon"></i>Tour Eiffel</td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td><i class="alarm icon"></i>Tour Eiffel</td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td><i class="calendar icon"></i>Tour Eiffel</td>
+                                <td>$40</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="column">
+                        <table class="ui very basic table">
+                            <thead></thead>
+                            <tbody>
+                            <tr>
+                                <td><i class="asterisk icon"></i>Tour Eiffel</td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td><i class="bug icon"></i>Tour Eiffel</td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td><i class="alarm icon"></i>Tour Eiffel</td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td><i class="calendar icon"></i>Tour Eiffel</td>
+                                <td>$40</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="column">
+                        <table class="ui very basic table">
+                            <thead></thead>
+                            <tbody>
+                            <tr>
+                                <td></i>Tour Eiffel</td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td><i class="alarm icon"></i>Tour Eiffel</td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td><i class="bug icon"></i>Tour Eiffel</td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td><i class="calendar icon"></i>Tour Eiffel</td>
+                                <td>$40</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <footer>

@@ -26,5 +26,9 @@ angular.module('travelApp', [])
                 'title': 'Da Nang',
                 'description': 'A Modern city near Hoi An.'
             },
+            {
+                'title': 'Da Nang',
+                'description': 'A Modern city near Hoi An.'
+            },
         ];
     });

@@ -141,28 +141,28 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px; }
 
-.gallery {
+.tour-gallery {
   margin-top: 25px;
   padding-bottom: 20px;
   padding-top: 20px;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #dddddd; }
 
-.description {
+.tour-description {
   padding-bottom: 20px;
   padding-top: 20px;
   border-bottom: 1px solid #dddddd; }
-  .description h3 {
+  .tour-description h3 {
     color: #333333;
     font-family: Montserrat, Arial, sans-serif;
     font-size: 22px;
     font-weight: 500; }
-  .description h4 {
+  .tour-description h4 {
     color: #333333;
     font-family: Montserrat, Arial, sans-serif;
     font-size: 18px;
     font-weight: 500; }
-  .description .content {
+  .tour-description .content {
     color: #565a5c;
     display: block;
     float: left;
@@ -170,47 +170,47 @@ footer {
     font-size: 12px;
     margin-bottom: 20px; }
 
-.schedule {
+.tour-schedule {
   border-bottom: 1px solid #dddddd;
   padding-bottom: 10px;
   padding-top: 10px; }
-  .schedule h3 {
+  .tour-schedule h3 {
     color: #333333;
     font-family: Montserrat, Arial, sans-serif;
     font-size: 22px;
     font-weight: 500; }
-  .schedule h4 {
+  .tour-schedule h4 {
     color: #333333;
     font-family: Montserrat, Arial, sans-serif;
     font-size: 18px;
     font-weight: 500; }
-  .schedule .content {
+  .tour-schedule .content {
     color: #565a5c;
     display: block;
     float: left;
     font-family: Montserrat, Arial, sans-serif;
     font-size: 12px;
     margin-bottom: 20px; }
-  .schedule table {
+  .tour-schedule table {
     margin-bottom: 10px; }
-    .schedule table .left {
+    .tour-schedule table .left {
       text-align: left; }
-    .schedule table .right {
+    .tour-schedule table .right {
       text-align: right; }
 
-.reviews {
+.tour-reviews {
   padding-top: 20px; }
-  .reviews h3 {
+  .tour-reviews h3 {
     color: #333333;
     font-family: Montserrat, Arial, sans-serif;
     font-size: 22px;
     font-weight: 500; }
-  .reviews h4 {
+  .tour-reviews h4 {
     color: #333333;
     font-family: Montserrat, Arial, sans-serif;
     font-size: 18px;
     font-weight: 500; }
-  .reviews .content {
+  .tour-reviews .content {
     color: #565a5c;
     display: block;
     float: left;
@@ -237,12 +237,27 @@ footer {
     font-family: Lato, Arial, sans-serif;
     font-size: 20px;
     font-weight: 300; }
-.home-tours .viewall-tours {
-  text-align: center; }
-  .home-tours .viewall-tours .button {
-    -webkit-font-smoothing: antialiased;
-    background-color: #51bce6;
-    color: white;
-    text-transform: uppercase;
-    font-family: Montserrat, Arial, sans-serif;
-    font-size: 12px; }
+.home-tours .tour-detail {
+  margin-bottom: 30px; }
+  .home-tours .tour-detail .viewall-tours {
+    text-align: center; }
+    .home-tours .tour-detail .viewall-tours .ui.button {
+      -webkit-font-smoothing: antialiased;
+      background-color: #51bce6;
+      color: white;
+      text-transform: uppercase;
+      font-family: Montserrat, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      outline-color: white; }
+.home-tours .line {
+  -webkit-font-smoothing: antialiased;
+  border-bottom: 1px solid #dddddd;
+  display: block;
+  margin-bottom: 20px; }
+.home-tours .other-tour {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px; }
