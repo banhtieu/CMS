@@ -139,33 +139,19 @@ footer {
       color: white;
     }
   }
-<<<<<<< HEAD
-  .addwislist{
-    .button
-    {
-        margin-top: 15px;
-        text-transform: uppercase;
-        border-bottom-color: #ff0000;
-        border-left-color: #ff0000;
-        border-right-color: #ff0000;
-        border-top-color: #ff0000;
-    }
-=======
 
   .add-wish-list{
     .button
     {
       margin-top: 15px;
       text-transform: uppercase;
-      border-color: #85c99d !important;
-      border-width: 2px;
+      border: 1px solid #85c99d;
+      color: #85c99d;
     }
 
->>>>>>> origin/master
     .button:hover{
-      color: #85c99d;
-      text-transform: lowercase;
-      border-color: #000;
+      color: #000;
+      border: 1px solid #000;
     }
   }
 }
@@ -209,22 +195,114 @@ footer {
   text-align: center;
   margin-top: 10px;
 
-  .item{
-    width: 100px;
-    //padding-left: 20px;
-    padding-bottom: 20px;
-    //padding-right: 20px;
-    padding-top: 20px;
-
-    .icon{
-      color: rgb(51, 51, 51);
-      display: block;
-      font-size: 28px;
-      text-align: center;
-      width: 35px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
+  .icon{
+    color: rgb(51, 51, 51);
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
+}
+
+.gallery{
+  margin-top: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid rgb(221, 221, 221);
+
+}
+
+.description{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+
+  h3{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  h4{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content{
+    color: rgb(86, 90, 92);
+    display: block;
+    float: left;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+}
+
+.schedule{
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  h3{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  h4{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content{
+    color: rgb(86, 90, 92);
+    display: block;
+    float: left;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  table{
+    margin-bottom: 10px;
+
+    .left {
+      text-align: left;
+    }
+
+    .right{
+      text-align: right;
+    }
+  }
+}
+
+.reviews{
+  padding-top: 20px;
+
+  h3{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  h4{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content{
+    color: rgb(86, 90, 92);
+    display: block;
+    float: left;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
 }
