@@ -3467,7 +3467,7 @@
 }
 
 /*--------------
-     Images
+     images
 ---------------*/
 
 .ui.cards > .card > .image,
@@ -6638,7 +6638,7 @@ select.ui.dropdown {
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* Images */
+/* images */
 
 .ui.feed > .event > .content .extra.images img {
   display: inline-block;
@@ -14404,7 +14404,7 @@ img.ui.bordered.image {
 }
 
 /*--------------
-     Images
+     images
 ---------------*/
 
 .ui.items > .item > .image {
@@ -17444,7 +17444,7 @@ ol.ui.horizontal.list li:before,
 }
 
 /*--------------
-     Images
+     images
 ---------------*/
 
 .ui.menu .item > img:only-child {

@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="TravelApp">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Detail</title>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="Semantic-UI/dist/semantic.min.css" />
     <link rel="stylesheet" href="styles/main.min.css" />
-    <script type="text/javascript" src="Scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery.js"></script>
     <script type="text/javascript" src="Semantic-UI/dist/semantic.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <script type="text/javascript" src="Scripts/tour.js"></script>
+    <script type="text/javascript" src="scripts/tour.js"></script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link  href="styles/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-    <script type="text/javascript" src="Scripts/fotorama.js"></script>
+    <script type="text/javascript" src="scripts/fotorama.js"></script>
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="scripts/application.js"></script>
 
     <script>
         $(function(){
             $("#datepicker").datepicker();
-            $("timepicker").timepicker();
         });
     </script>
 
@@ -90,7 +87,7 @@
                             <div class="row">
                                 <i class="doctor icon"></i>
                             </div>
-                            <div class="row">3 Hours</div>
+                            <div class="row">3 hours</div>
                         </div>
                         <div class="column">
                             <div class="row">
@@ -116,14 +113,13 @@
                     <div class="ui grid">
                         <div class="column">
                             <div class="fotorama" data-nav="thumbs">
-                                <a href="1.jpg"><img src="Images/1_medium.jpg" width="144" height="96" /></a>
-                                <a href="2.jpg"><img src="Images/2_medium.jpg" width="144" height="96" /></a>
-                                <a href="3.jpg"><img src="Images/3_medium.jpg" width="144" height="96" /></a>
-                                <a href="4.jpg"><img src="Images/4_medium.jpg" width="144" height="96" /></a>
-                                <a href="5.jpg"><img src="Images/5_medium.jpg" width="144" height="96" /></a>
-                                <a href="6.jpg"><img src="Images/6_medium.jpg" width="144" height="96" /></a>
-                                <a href="7.jpg"><img src="Images/7_medium.jpg" width="144" height="96" /></a>
-                                <a href="8.jpg"><img src="Images/8_medium.jpg" width="144" height="96" /></a>
+                                <a href="images/1_medium.jpg"><img src="images/1_medium.jpg" width="144" height="96" /></a>
+                                <a href="images/1_medium.jpg"><img src="images/2_medium.jpg" width="144" height="96" /></a>
+                                <a href="images/1_medium.jpg"><img src="images/3_medium.jpg" width="144" height="96" /></a>
+                                <a href="images/1_medium.jpg"><img src="images/4_medium.jpg" width="144" height="96" /></a>
+                                <a href="images/1_medium.jpg"><img src="images/5_medium.jpg" width="144" height="96" /></a>
+                                <a href="images/1_medium.jpg"><img src="images/6_medium.jpg" width="144" height="96" /></a>
+                                <a href="images/1_medium.jpg"><img src="images/8_medium.jpg" width="144" height="96" /></a>
                             </div>
                         </div>
                     </div>
@@ -222,7 +218,7 @@
                 </div>
             </div>
             <div class="six wide column">
-                <div class="wrapper">
+                <div class="wrapper" ng-controller="BookingController">
                     <div class="view-map">
                         <div class="fluid ui button">View On Map</div>
                     </div>
@@ -230,37 +226,29 @@
                         <div class="two fields">
                             <div class="field">
                                 <label><i class="calendar icon"></i>Select a date</label>
-                                <input placeholder="calendar" type="text" id="datepicker">
+                                <input placeholder="calendar" type="text" id="datepicker" />
                             </div>
                             <div class="field">
                                 <label><i class="wait icon"></i>Time</label>
-                                <input placeholder="time" type="text" id="timepicker">
+                                <input placeholder="time"
+                                       type="text"
+                                       id="timepicker" />
                             </div>
                         </div>
                         <div class="two fields">
                             <div class="field">
                                 <label>Adults</label>
-                                <div class="ui selection dropdown">
-                                    <div class="default text">Select</div>
-                                    <i class="dropdown icon"></i>
-                                    <input type="hidden" name="Age">
-                                    <div class="menu">
-                                        <div class="item" data-value="19">19</div>
-                                        <div class="item" data-value="20">20</div>
-                                    </div>
-                                </div>
+                                <select class="ui dropdown"
+                                        ng-model="booking.numberOfAdults"
+                                        ng-options="item as item for item in counters">
+                                </select>
                             </div>
                             <div class="field">
                                 <label>Children</label>
-                                <div class="ui selection dropdown">
-                                    <div class="default text">Select</div>
-                                    <i class="dropdown icon"></i>
-                                    <input type="hidden" name="Age">
-                                    <div class="menu">
-                                        <div class="item" data-value="1">1</div>
-                                        <div class="item" data-value="2">2</div>
-                                    </div>
-                                </div>
+                                <select class="ui dropdown"
+                                        ng-model="booking.numberOfChildren"
+                                        ng-options="item as item for item in counters">
+                                </select>
                             </div>
                         </div>
                         <div class="booking-summary">
@@ -270,20 +258,17 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>Adult</td>
-                                    <td>2</td>
+                                    <td width="70%">Adult</td>
+                                    <td width="30%">{{ booking.numberOfAdults }}</td>
                                 </tr>
                                 <tr>
                                     <td>Children</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>Total Amount</td>
-                                    <td>3 * $52</td>
+                                    <td>{{ booking.numberOfChildren }}</td>
                                 </tr>
                                 <tr class="total">
                                     <td>Total Cost</td>
-                                    <td>$154</td>
+                                    <td>${{ booking.numberOfAdults * booking.adultPrice +
+                                        booking.numberOfChildren * booking.childrenPrice }}</td>
                                 </tr>
                                 </tbody>
                             </table>
