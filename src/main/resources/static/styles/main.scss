@@ -370,8 +370,9 @@ footer {
 }
 
 
-.ui.card
+.cards>.ui.card
 {
   border-radius: 0.0px;
-  box-shadow: none;
+  box-shadow: rgba(0,0,0,.40784) 0 1px 5px -1px;
+  transition-duration: 0.5s;
 }
