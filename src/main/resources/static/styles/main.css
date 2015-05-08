@@ -35,9 +35,9 @@ footer {
   position: relative; }
   .header .background .content {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     color: white;
     padding-bottom: 20px;
     background: -moz-linear-gradient(top, rgba(30, 87, 153, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
@@ -261,3 +261,7 @@ footer {
   background-color: white;
   padding-top: 20px;
   padding-bottom: 20px; }
+
+.ui.card {
+  border-radius: 0.0px;
+  box-shadow: none; }

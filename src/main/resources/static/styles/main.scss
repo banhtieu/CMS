@@ -54,9 +54,9 @@ footer {
 
     .content {
       position: absolute;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
+      bottom: 0;
+      left: 0;
+      right: 0;
       color: white;
       padding-bottom: $padding;
 
@@ -367,4 +367,11 @@ footer {
     padding-bottom: 20px;
   }
 
+}
+
+
+.ui.card
+{
+  border-radius: 0.0px;
+  box-shadow: none;
 }
