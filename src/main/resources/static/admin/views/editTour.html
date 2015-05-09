@@ -1,0 +1,17 @@
+<md-content layout="column" flex>
+    <div class="secondary-menu" layout="row" style="background: #fff; color: #000">
+        <md-button ng-href="#/tours" aria-label="Back"><ng-md-icon icon="arrow_back"></ng-md-icon></md-button>
+        <span flex>Add a Tour</span>
+        <md-button ng-href="#/tours/add" aria-label="Add New Tour"><ng-md-icon icon="add"></ng-md-icon></md-button>
+    </div>
+    <div class="content" layout="column">
+        <div layout="row" class="data-row">
+            <md-input-container md-no-float flex class="no-margin no-padding">
+                <input ng-model="tour.name" type="text" placeholder="Title">
+            </md-input-container>
+        </div>
+        <div layout="row" class="data-row">
+            <text-angular></text-angular>
+        </div>
+    </div>
+</md-content>

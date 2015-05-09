@@ -1,0 +1,25 @@
+.md-toolbar {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  .md-group {
+    display: inline-block;
+
+    .md-button {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    .md-button:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+.md-texteditor {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-top-width: 0px;
+  margin: 0px;
+  padding: 5px;
+}
