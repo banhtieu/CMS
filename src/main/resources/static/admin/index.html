@@ -9,10 +9,9 @@
     <meta name="viewport" content="initial-scale=1" />
     <title>Control Panel</title>
 </head>
-<body ng-controller="ApplicationController" layout="column">
-
-<md-toolbar layout="row">
-    <md-button ng-click="toggleSidenav('left')" hide-gt-sm class="menuBtn">
+<body layout="column">
+<md-toolbar layout="row" ng-controller="ApplicationController">
+    <md-button ng-click="toggleSidenav('left')" hide-gt-sm class="menuBtn" aria-label="Menu Title">
         <ng-md-icon icon="menu" style="fill: white"></ng-md-icon>
     </md-button>
     <h1 class="md-toolbar-tools">Administration</h1>
@@ -24,7 +23,7 @@
             md-component-id="left"
             md-is-locked-open="$mdMedia('gt-md')">
         <md-list>
-            <md-button><ng-md-icon icon="dashboard"></ng-md-icon>Dash board</md-button>
+            <md-button aria-label="Add New Tour"><ng-md-icon icon="dashboard"></ng-md-icon>Dash board</md-button>
             <md-button router-link="#/tours"><ng-md-icon icon="receipt"></ng-md-icon>Tours</md-button>
             <md-button><ng-md-icon icon="explore"></ng-md-icon>Destinations</md-button>
             <md-button><ng-md-icon icon="image"></ng-md-icon>Photos</md-button>
@@ -33,12 +32,7 @@
         </md-list>
     </md-sidenav>
     <div layout="column" flex id="content">
-        <md-content layout="column" flex>
-            <div class="secondary-menu" layout="row" style="background: #fff; color: #000">
-                <span flex>Administration</span>
-                <md-button><ng-md-icon icon="add"></ng-md-icon></md-button>
-            </div>
-        </md-content>
+        <div ng-view></div>
     </div>
 </section>
 
@@ -46,11 +40,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
 
 
 <!-- Angular Material Javascript now available via Google CDN; version 0.8 used here -->
 <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.js"></script>
 <script src="//cdn.jsdelivr.net/angular-material-icons/0.4.0/angular-material-icons.min.js"></script>
 <script src="/admin/controllers/Application.js"></script>
+<script src="/admin/services/TourService.js"></script>
+<script src="/admin/controllers/TourController.js"></script>
 </body>
 </html>

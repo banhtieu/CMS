@@ -1,0 +1,26 @@
+<md-content layout="column" flex>
+    <div class="secondary-menu" layout="row" style="background: #fff; color: #000">
+        <span flex>Administration</span>
+        <md-button aria-label="Add New Tour"><ng-md-icon icon="add"></ng-md-icon></md-button>
+    </div>
+    <div class="content" layout="column">
+        <div layout="row" class="data-row">
+            <md-input-container md-no-float flex class="no-margin no-padding">
+                <input ng-model="user.phone" type="text" placeholder="Filter">
+            </md-input-container>
+        </div>
+        <div ng-repeat="tour in tours" layout="row" class="data-row" ng-class-even="'odd'">
+            <div class="selector">
+                <md-checkbox></md-checkbox>
+            </div>
+            <div class="summary" layout="column" flex>
+                <div class="title">{{ tour.name }}</div>
+                <div class="description">{{ tour.description }}</div>
+            </div>
+            <div class="flex">
+                <md-button><ng-md-icon icon="edit"></ng-md-icon></md-button>
+                <md-button><ng-md-icon icon="delete"></ng-md-icon></md-button>
+            </div>
+        </div>
+    </div>
+</md-content>

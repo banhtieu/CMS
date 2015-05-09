@@ -41,6 +41,43 @@ md-sidenav#leftNav {
   }
 
   .md-button {
-    padding: 5px 20px;
+    padding: 5px 10px;
   }
+}
+
+.data-row {
+
+  padding: 5px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+
+  md-checkbox {
+    margin: 5px;
+  }
+
+  .title {
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  .description {
+    font-size: small;
+    color: rgba(0, 0, 0, 0.45);
+  }
+}
+
+.data-row.odd {
+  background-color: rgba(205, 198, 255, 0.15);
+}
+
+.data-row:hover {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.no-padding {
+  padding: 0px;
 }
