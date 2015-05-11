@@ -110,7 +110,6 @@ application.controller("TourInfoController", function($scope){
 
 application.controller("HomeTour", function($scope){
     $scope.tour = {
-        title :
 
     }
 });
