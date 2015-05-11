@@ -1,0 +1,29 @@
+.slider {
+
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+
+  .pages{
+    position: absolute;
+    top: 0;
+    transition-duration: 1.0s;
+    display: table-row;
+
+    .page {
+      overflow: hidden;
+      display: table-cell;
+      background-size: cover;
+      transition-duration: 0.25s;
+    }
+
+    .page.selected {
+      opacity: 1.0;
+    }
+  }
+
+
+}
+
+
