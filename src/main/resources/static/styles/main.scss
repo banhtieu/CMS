@@ -375,4 +375,24 @@ footer {
   border-radius: 0.0px;
   box-shadow: rgba(0,0,0,.40784) 0 1px 5px -1px;
   transition-duration: 0.5s;
+
+  .zoom-effect{
+    overflow: hidden;
+  }
+
+  img{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  a:hover img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }

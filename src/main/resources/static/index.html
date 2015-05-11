@@ -40,13 +40,13 @@
         </div>
     </div>
     <div class="ui image fotorama">
-        <img src="images/1_Hue.jpg" />
-        <img src="images/2_Hue.jpg" />
-        <img src="images/3_Hue.jpg" />
-        <img src="images/4_Hue.jpg" />
-        <img src="images/5_Hue.jpg" />
-        <img src="images/6_Hue.jpg" />
-        <img src="images/7_Hue.jpg" />
+        <img src="images/slide_1.jpg" />
+        <img src="images/slide_2.jpg" />
+        <img src="images/slide_3.jpg" />
+        <img src="images/slide_4.jpg" />
+        <img src="images/slide_5.jpg" />
+        <img src="images/slide_6.jpg" />
+        <img src="images/slide_7.jpg" />
     </div>
     <div class="home-tours">
         <div class="wrapper">
@@ -63,12 +63,12 @@
                 <div ng-controller="AllToursController as allTours">
                     <div class="ui three stackable cards">
                         <div class="ui card" ng-repeat="tour in allTours.tours">
-                            <div class="ui image">
+                            <div class="ui image zoom-effect">
                                 <a class="ui left red corner label">
                                     <i class="heart icon"></i>
                                 </a>
                                 <a href="/detail.html">
-                                    <img src="images/tour_box_1.jpg" />
+                                    <img src="{{ tour.image }}" />
                                 </a>
                             </div>
                             <div class="content">
@@ -86,28 +86,29 @@
                 </div>
                 <div class="viewall-tours">
                     <div class="ui button">View Alls Tours (144)</div>
+
                 </div>
             </div>
             <div class="line"></div>
             <div class="tour-detail">
                 <div class="ui center aligned">
                     <div class="main-title">
-                        <h2>Paris
+                        <h2>VietNam
                             <span>Top</span>
-                            Hotels
+                            Destinations
                         </h2>
                         <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
                     </div>
                 </div>
                 <div ng-controller="AllToursController as allTours">
                     <div class="ui three stackable cards">
-                        <div class="ui card" ng-repeat="tour in allTours.tours">
-                            <div class="ui image">
+                        <div class="ui card" ng-repeat="tour in allTours.destinations">
+                            <div class="ui image zoom-effect">
                                 <a class="ui left red corner label">
                                     <i class="heart icon"></i>
                                 </a>
                                 <a href="/detail.html">
-                                    <img src="images/tour_box_1.jpg" />
+                                    <img src="{{ tour.image }}" />
                                 </a>
                             </div>
                             <div class="content">
@@ -124,7 +125,7 @@
                     </div>
                 </div>
                 <div class="viewall-tours">
-                    <div class="ui button">View Alls Hotels (144)</div>
+                    <div class="ui button">View Alls  (144)</div>
                 </div>
             </div>
         </div>
