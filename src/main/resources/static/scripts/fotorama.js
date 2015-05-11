@@ -891,7 +891,7 @@ var $WINDOW = $(window),
       margin: MARGIN,
       glimpse: 0,
 
-      fit: 'contain', // 'cover' || 'scaledown' || 'none'
+      fit: 'cover', // 'cover' || 'scaledown' || 'none'
 
       position: FIFTYFIFTY,
       thumbposition: FIFTYFIFTY,
