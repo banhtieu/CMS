@@ -484,9 +484,14 @@ footer {
     font-family: Montserrat, Arial, sans-serif;
     font-size: 12px;
     margin-bottom: 20px;
+    text-align: justify;
   }
   img{
     width: 100%;
     margin-top: 10px;
+  }
+
+  p{
+    display: block;
   }
 }
