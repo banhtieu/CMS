@@ -214,7 +214,7 @@ footer {
 }
 
 .tour-description{
-  height: 200px;
+
 
   h3{
     color: rgb(51, 51, 51);
@@ -398,7 +398,7 @@ footer {
   }
 }
 
-.post{
+/*.post{
 
   margin-top: 20px;
   margin-bottom: 10px;
@@ -457,5 +457,36 @@ footer {
       font-size: 18px;
       font-weight: 500;
     }
+  }
+}*/
+
+.post{
+  margin-top: 10px;
+  height: 200px;
+
+  h3{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 0px;
+  }
+  h4{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content{
+    color: rgb(86, 90, 92);
+    display: block;
+    float: left;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  img{
+    width: 100%;
+    margin-top: 10px;
   }
 }

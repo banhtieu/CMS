@@ -147,29 +147,27 @@ footer {
 .tour-gallery {
   margin-top: 15px; }
 
-.tour-description {
-  height: 200px; }
-  .tour-description h3 {
-    color: #333333;
-    font-family: Montserrat, Arial, sans-serif;
-    font-size: 22px;
-    font-weight: 500;
-    margin-top: 0px; }
-  .tour-description h4 {
-    color: #333333;
-    font-family: Montserrat, Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 500; }
-  .tour-description .content {
-    color: #565a5c;
-    display: block;
-    float: left;
-    font-family: Montserrat, Arial, sans-serif;
-    font-size: 12px;
-    margin-bottom: 20px; }
-  .tour-description img {
-    width: 100%;
-    margin-top: 10px; }
+.tour-description h3 {
+  color: #333333;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0px; }
+.tour-description h4 {
+  color: #333333;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500; }
+.tour-description .content {
+  color: #565a5c;
+  display: block;
+  float: left;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 12px;
+  margin-bottom: 20px; }
+.tour-description img {
+  width: 100%;
+  margin-top: 10px; }
 
 .tour-schedule {
   border-bottom: 1px solid #dddddd;
@@ -281,44 +279,88 @@ footer {
     -webkit-transform: scale(1);
     transform: scale(1); }
 
-.post {
+/*.post{
+
   margin-top: 20px;
   margin-bottom: 10px;
   padding: 30px 30px 30px 30px;
-  border: 1px solid #dddddd;
-  background-color: white; }
-  .post .title {
-    border-top: 1px dashed #cccccc;
-    border-bottom: 1px dashed #cccccc;
-    color: #999999;
+  border: 1px solid rgb(221, 221, 221);
+  background-color: white;
+
+  .title{
+    border-top: 1px dashed rgb(204, 204, 204);
+    border-bottom: 1px dashed rgb(204, 204, 204);
+    color: rgb(153, 153, 153);
     font-family: Montserrat, sans-serif;
     font-size: 12px;
     padding-top: 20px;
     padding-bottom: 40px;
     margin-top: 20px;
-    text-align: center; }
-    .post .title .left {
-      float: left; }
-    .post .title .right {
-      float: right; }
-  .post img {
-    vertical-align: middle; }
-  .post .content {
+    text-align: center;
+
+    .left{
+      float: left;
+    }
+
+    .right{
+      float: right;
+    }
+  }
+
+  img{
+    vertical-align: middle;
+  }
+
+  .content{
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
-    color: #666666;
-    font-family: 'Montserrat', Arial, sans-serif; }
-    .post .content h2 {
-      color: #333333;
+    color: rgb(102, 102, 102);
+    font-family: 'Montserrat', Arial, sans-serif;
+
+    h2{
+      color: rgb(51, 51, 51);
       font-family: 'Montserrat', Arial, sans-serif;
       font-size: 22px;
       font-weight: 500;
       margin-top: 20px;
-      margin-bottom: 20px; }
-    .post .content p {
-      margin-bottom: 20px; }
-  .post .comment h4 {
+      margin-bottom: 20px;
+    }
+
+    p{
+      margin-bottom: 20px;
+    }
+  }
+
+  .comment{
+    h4{
+      color: rgb(51, 51, 51);
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}*/
+.post {
+  margin-top: 10px;
+  height: 200px; }
+  .post h3 {
     color: #333333;
-    display: block;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 0px; }
+  .post h4 {
+    color: #333333;
+    font-family: Montserrat, Arial, sans-serif;
     font-size: 18px;
     font-weight: 500; }
+  .post .content {
+    color: #565a5c;
+    display: block;
+    float: left;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px; }
+  .post img {
+    width: 100%;
+    margin-top: 10px; }
