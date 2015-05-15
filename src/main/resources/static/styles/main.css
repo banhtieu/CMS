@@ -86,17 +86,20 @@ footer {
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase; }
-.booking-summary .book-now .button {
-  background-color: #85c99d;
-  font-family: Montserrat, Arial, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  padding: 15px 20px; }
-.booking-summary .book-now .button:hover {
-  background-color: #000000;
-  color: white; }
+.booking-summary .book-now {
+  display: inline; }
+  .booking-summary .book-now .button {
+    background-color: #85c99d;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px 20px;
+    width: 40%; }
+  .booking-summary .book-now .button:hover {
+    background-color: #000000;
+    color: white; }
 .booking-summary .add-wish-list .button {
   margin-top: 15px;
   text-transform: uppercase;
@@ -142,11 +145,7 @@ footer {
     margin-bottom: 10px; }
 
 .tour-gallery {
-  margin-top: 25px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #dddddd; }
+  margin-top: 15px; }
 
 .tour-description {
   padding-bottom: 20px;
@@ -279,3 +278,45 @@ footer {
   .cards > .ui.card a:hover img {
     -webkit-transform: scale(1);
     transform: scale(1); }
+
+.post {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 30px 30px 30px 30px;
+  border: 1px solid #dddddd;
+  background-color: white; }
+  .post .title {
+    border-top: 1px dashed #cccccc;
+    border-bottom: 1px dashed #cccccc;
+    color: #999999;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    text-align: center; }
+    .post .title .left {
+      float: left; }
+    .post .title .right {
+      float: right; }
+  .post img {
+    vertical-align: middle; }
+  .post .content {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    color: #666666;
+    font-family: 'Montserrat', Arial, sans-serif; }
+    .post .content h2 {
+      color: #333333;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 500;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .post .content p {
+      margin-bottom: 20px; }
+  .post .comment h4 {
+    color: #333333;
+    display: block;
+    font-size: 18px;
+    font-weight: 500; }

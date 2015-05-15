@@ -113,3 +113,28 @@ application.controller("HomeTour", function($scope){
 
     }
 });
+
+application.controller("PlaceInfoController", function($scope){
+   $scope.place = {
+       images: [
+           {
+               url: "images/1_medium.jpg"
+           },
+           {
+               url: "images/2_medium.jpg"
+           },
+           {
+               url: "images/3_medium.jpg"
+           },
+           {
+               url: "images/4_medium.jpg"
+           },
+           {
+               url: "images/5_medium.jpg"
+           },
+           {
+               url: "images/6_medium.jpg"
+           }
+       ]
+   }
+});

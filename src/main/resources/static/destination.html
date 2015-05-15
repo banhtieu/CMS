@@ -1,18 +1,110 @@
 <!DOCTYPE html>
+<html ng-app="TravelApp">
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Detail</title>
+    <title></title>
     <meta name="viewport" content="initial-scale=1" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="Semantic-UI/dist/semantic.min.css" />
     <link rel="stylesheet" href="styles/main.min.css" />
-    <link rel = "stylesheet" href="styles/main.scss">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="Semantic-UI/dist/semantic.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-sanitize.js"></script>
+    <script type="text/javascript" src="scripts/tour.js"></script>
+
+    <link  href="styles/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script type="text/javascript" src="scripts/fotorama.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="scripts/application.js"></script>
+
 </head>
 <body>
-<div class="zoom-effect-container">
-    <div class="image-card">
-        <img src="http://codingtips.kanishkkunal.in/images/pixabay/lions.jpg"/>
+    <div class="fixed secondary ui menu" id="main-menu">
+        <div class="wrapper">
+            <a class="item">
+                <i class="home icon"></i> Home
+            </a>
+            <div class="right menu">
+                <div class="item">
+                    <div class="ui transparent icon input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="background">
+            <div class="content">
+                <div class="wrapper">
+                    <h1>Title</h1>
+                    <div>Description</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-bar">
+        <div class="wrapper">
+            <div class="ui breadcrumb">
+                <a class="section">Home</a>
+                <i class="right chevron icon divider"></i>
+                <a class="section">Category</a>
+                <i class="right chevron icon divider"></i>
+                <div class="active section">Detail</div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+    <div class="ui grid">
+        <div class="twelve wide column">
+            <div class="post">
+                <img src="images/hue_beach.jpg" width="100%" height="300">
+                <div class="title">
+                    <div class="left">
+                        <div class="ui horizontal list">
+                            <div class="item">
+                                <div class="content">
+                                    <i class="calendar outline icon"></i>
+                                    On 12-Nov-2010
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <i class="inbox icon"></i>
+                                    In top tours
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="content">
+                                    <i class="tag icon"></i>
+                                    Tags work personal
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <i class="comment icon"></i>
+                        <a>25 Comments</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>Duis aute irure dolor in reprehenderit</h2>
+                    <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem.....</p>
+                    <p>Aenean iaculis sodales dui, non hendrerit lorem rhoncus ut. Pellentesque ullamcorper venenatis elit idaipiscingi Duis tellus neque, tincidunt eget pulvinar sit amet, rutrum nec urna. Suspendisse pretium laoreet elit vel ultricies. Maecenas ullamcorper ultricies rhoncus. Aliquam erat volutpat.</p>
+                </div>
+                <div class="comment">
+                    <h4>3 comments</h4>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column">
+            another tours
+        </div>
     </div>
 </div>
 </body>
