@@ -148,14 +148,13 @@ footer {
   margin-top: 15px; }
 
 .tour-description {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  border-bottom: 1px solid #dddddd; }
+  height: 200px; }
   .tour-description h3 {
     color: #333333;
     font-family: Montserrat, Arial, sans-serif;
     font-size: 22px;
-    font-weight: 500; }
+    font-weight: 500;
+    margin-top: 0px; }
   .tour-description h4 {
     color: #333333;
     font-family: Montserrat, Arial, sans-serif;
@@ -168,6 +167,9 @@ footer {
     font-family: Montserrat, Arial, sans-serif;
     font-size: 12px;
     margin-bottom: 20px; }
+  .tour-description img {
+    width: 100%;
+    margin-top: 10px; }
 
 .tour-schedule {
   border-bottom: 1px solid #dddddd;

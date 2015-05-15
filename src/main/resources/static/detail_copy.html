@@ -132,6 +132,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="wrapper">
+                    <div class="ui form segment">
+                        <div class="field">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="ten wide column" ng-controller="TourDetailController">
                 <div class="tour-gallery">
@@ -150,55 +157,6 @@
         </div>
         <div class="ui stackable grid">
             <div class="six wide column">
-                <div class="view-map">
-                    <div class="fluid ui button">Hue Daily Tours</div>
-                </div>
-                <div class="ui form segment">
-                    <div class="ui list">
-                        <div class="item">
-                            <i class="map marker icon"></i>
-                            <div class="content">
-                                <a>Hamberger hill tours</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <i class="map marker icon"></i>
-                            <div class="content">
-                                <a>Hue to Hoi An by Motobike</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <i class="map marker icon"></i>
-                            <div class="content">
-                                <a>Tam Giang lagoon photos tour</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <i class="map marker icon"></i>
-                            <div class="content">
-                                <a>An Bang city of ghosts</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <i class="map marker icon"></i>
-                            <div class="content">
-                                <a>Phong Nha notational part in 2 days</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <i class="map marker icon"></i>
-                            <div class="content">
-                                <a>Thien Duong Cave</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <i class="map marker icon"></i>
-                            <div class="content">
-                                <a>Hoi An</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="wrapper" ng-controller="BookingController">
                     <div class="ui fluid form segment">
                         <div class="help" ng-controller="TourInfoController">
@@ -217,59 +175,40 @@
 
                 <div class="tour-description">
                     <div class="ui column grid">
-                        <div class=" six wide column">
-                            <img src="images/1_hue.jpg">
+                        <div class=" four wide column">
+                            <h3>Description</h3>
                         </div>
-                        <div class="ten wide column">
-                            <div>
-                                <h3>Phong Nha Cave</h3>
-                                <div class="">Duration: Phong Nha cave and Paradise cave in 2 Days tour
-                                    Price: Please contact us for best price
-                                    Transports: Motorbike with driver , Boat , minivan tranfers . All meals , entrance fee , Gas , Boat , Minivan Tranfer
-                                    Designated a Unesco World Heritage site in 2003, the remarkable Phong Nha-Ke Bang National Park  the oldest karst mountains in Asia</div>
+                        <div class="twelve wide column">
+                            <div ng-bind-html="tour.description"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-schedule">
+                    <div class="ui grid">
+                        <div class="four wide column">
+                            <h3>Schedule</h3>
+                        </div>
+                        <div class="twelve wide column">
+                            <div class="row">
+                                <table class="ui very basic table">
+                                    <tbody>
+                                    <tr ng-repeat="schedule in tour.schedules">
+                                        <td class="left">{{ schedule.day }}</td>
+                                        <td class="right">{{ schedule.time }}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                    <div class="ui column grid">
-                        <div class=" six wide column">
-                            <img src="images/1_hue.jpg">
+                </div>
+                <div class="tour-reviews">
+                    <div class="ui grid">
+                        <div class="ui four wide column">
+                            <h3>Reviews</h3>
                         </div>
-                        <div class="ten wide column">
-                            <div>
-                                <h3>Phong Nha Cave</h3>
-                                <div class="">Duration: Phong Nha cave and Paradise cave in 2 Days tour
-                                    Price: Please contact us for best price
-                                    Transports: Motorbike with driver , Boat , minivan tranfers . All meals , entrance fee , Gas , Boat , Minivan Tranfer
-                                    Designated a Unesco World Heritage site in 2003, the remarkable Phong Nha-Ke Bang National Park  the oldest karst mountains in Asia</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ui column grid">
-                        <div class=" six wide column">
-                            <img src="images/1_hue.jpg">
-                        </div>
-                        <div class="ten wide column">
-                            <div>
-                                <h3>Phong Nha Cave</h3>
-                                <div class="">Duration: Phong Nha cave and Paradise cave in 2 Days tour
-                                    Price: Please contact us for best price
-                                    Transports: Motorbike with driver , Boat , minivan tranfers . All meals , entrance fee , Gas , Boat , Minivan Tranfer
-                                    Designated a Unesco World Heritage site in 2003, the remarkable Phong Nha-Ke Bang National Park  the oldest karst mountains in Asia</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ui column grid">
-                        <div class=" six wide column">
-                            <img src="images/1_hue.jpg">
-                        </div>
-                        <div class="ten wide column">
-                            <div>
-                                <h3>Phong Nha Cave</h3>
-                                <div class="">Duration: Phong Nha cave and Paradise cave in 2 Days tour
-                                    Price: Please contact us for best price
-                                    Transports: Motorbike with driver , Boat , minivan tranfers . All meals , entrance fee , Gas , Boat , Minivan Tranfer
-                                    Designated a Unesco World Heritage site in 2003, the remarkable Phong Nha-Ke Bang National Park  the oldest karst mountains in Asia</div>
-                            </div>
+                        <div class="ui twelve wide column">
+
                         </div>
                     </div>
                 </div>
